@@ -173,9 +173,10 @@ article:hover>.article-header .article-image>img {
 
 .video {
     width: 100%;
+    height: auto;
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     z-index: -1;
 }
 
@@ -188,7 +189,7 @@ article:hover>.article-header .article-image>img {
     object-position: center;
     position: absolute;
     right: 0;
-    bottom: 0;
+    top: 0;
     z-index: -1;
 }
 
@@ -196,7 +197,12 @@ article:hover>.article-header .article-image>img {
     .video {
         display: none;
     }
+    
     .image-replace {
         display: block;
+    }
+
+    section {
+        flex-direction: column;
     }
 }
