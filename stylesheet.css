@@ -106,24 +106,15 @@ nav ul li a:hover {
 }
 section {
     display: flex;
-    padding: 2vw;
-    background: green;
-}
-
-article {
-    background: red;
-}
-
-.card-container {
-    display: flex;
     gap: 2vw;
     align-items: flex-start;
     margin-left: 5vw;
     margin-right: 5vw;
 }
 
-.card {
+article {
     width: 100%;
+    display: block;
     background: white;
     padding: 10px;
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
@@ -132,17 +123,17 @@ article {
     overflow: hidden;
 }
 
-.card-header {
+.article-header {
     font-size: 2vw;
     font-weight: bold;
     margin-bottom: 5px;
 }
 
-.card-header .card-image {
-    overflow: hidden;
+article:hover>.article-header .article-image>img {
+    transform: scale(1.025);
 }
 
-.card-image img {
+.article-image {
     display: block;
     width: 100%;
     max-height: 200px;
@@ -152,15 +143,29 @@ article {
     transition: 2s transform ease-in-out;
 }
 
-.card:hover>.card-image>img {
-    transform: scale(1.025);
+.article-image img {
+    display: block;
+    width: 100%;
+    max-height: 200px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    transition: 2s transform ease-in-out;
 }
 
-.card-footer {
+.article-header .article-image {
+    overflow: hidden;
+}
+
+.article-body {
     margin-top: 5px;
 }
 
-.card-footer a {
+.article-footer {
+    margin-top: 5px;
+}
+
+.article-footer a {
     text-decoration: none;
     color: black;
     font-weight: bold;
