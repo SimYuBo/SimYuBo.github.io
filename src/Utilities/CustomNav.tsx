@@ -62,4 +62,5 @@ const CustomNavbar: React.FC = () => {
     );
 };
 
+
 export default CustomNavbar;
