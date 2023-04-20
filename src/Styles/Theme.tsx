@@ -3,12 +3,11 @@ import { createTheme } from "@mui/material";
 export const mainTheme = createTheme({
     typography: {
         fontFamily: [
-          '"Open Sans"',
-          '"Input Mono"',
-          'Roboto',
+            '"Open Sans"',
+            '"Input Mono"',
+            'Roboto',
         ].join(','),
-      },
-    
+    },
     palette: {
         mode: 'dark',
         background: {
@@ -25,5 +24,14 @@ export const mainTheme = createTheme({
             dark: 'rgba(10, 25, 47, 0.2)',
             light: 'rgba(204, 214, 246, 0.2)',
         }
-    }
+    },
+    breakpoints: {
+        values: {
+            xs: 0,
+            sm: 425,
+            md: 768,
+            lg: 1024,
+            xl: 1280,
+        },
+    },
 })

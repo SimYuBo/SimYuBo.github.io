@@ -12,16 +12,16 @@ export const LfImageBoxSx = {
     zIndex: 0,
     justifyContent: 'left',
     height: '100%',
-    width: '60%',
+    width: '50em',
     overflow: 'hidden',
 }
 
 export const LfOverlayBoxSx = {
-    display: 'block',
-    zIndex: 1,
+    display: 'absolute',
+    zIndex: "fab",
     justifyContent: 'right',
     height: '100%',
-    width: '60%',
+    width: '50em',
 }
 
 export const LfTitleBoxSx = {
