@@ -9,7 +9,6 @@ export const LfRootBoxSx = {
 
 export const LfImageBoxSx = {
     bgcolor: mainTheme.palette.primary.main,
-    zIndex: 0,
     justifyContent: 'left',
     height: '100%',
     width: '50em',
@@ -18,7 +17,6 @@ export const LfImageBoxSx = {
 
 export const LfOverlayBoxSx = {
     display: 'absolute',
-    zIndex: "fab",
     justifyContent: 'right',
     height: '100%',
     width: '50em',

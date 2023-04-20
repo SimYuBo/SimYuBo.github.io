@@ -81,16 +81,22 @@ export function LfSection(props: ILeftFeaturedSection) {
             }}></img>
         </LfImageBox>
         <LfOverlayBox>
-          <LfTitleBox>
-            <Typography>
-              {lfTitle}
-            </Typography>
-          </LfTitleBox>
-          <LfDescBox>
-            <Typography>
-              {lfDesc}
-            </Typography>
-          </LfDescBox>
+          <div style={{ position: "relative" }}>
+            <div style={{ zIndex: 0 }}>
+              <LfTitleBox>
+                <Typography>
+                  {lfTitle}
+                </Typography>
+              </LfTitleBox>
+            </div>
+            <div style={{ zIndex: 1 }}>
+              <LfDescBox>
+                <Typography>
+                  {lfDesc}
+                </Typography>
+              </LfDescBox>
+            </div>
+          </div>
         </LfOverlayBox>
       </LfRootBox>
     </>
