@@ -20,7 +20,7 @@ export const mainTheme = createTheme({
             contrastText: '#CCD6F6',
         },
         secondary: {
-            main: 'rgba(83, 212, 186, 0.2)',
+            main: '#122551',
             dark: 'rgba(10, 25, 47, 0.2)',
             light: 'rgba(204, 214, 246, 0.2)',
         }

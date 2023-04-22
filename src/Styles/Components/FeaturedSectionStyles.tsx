@@ -2,33 +2,39 @@ import { mainTheme } from "../Theme";
 
 export const LfRootBoxSx = {
     bgcolor: mainTheme.palette.primary.dark,
-    height: "20em",
-    width: '100%',
+    position: 'relative',
+    height: "26em",
+    width: '1',
     display: 'flex',
+    mb: '8em'
 }
 
 export const LfImageBoxSx = {
-    bgcolor: mainTheme.palette.primary.main,
-    justifyContent: 'left',
-    height: '100%',
-    width: '50em',
-    overflow: 'hidden',
+    postition: 'absolute',
+    bgcolor: "#FFFFF",
+    width: '48em',
 }
 
 export const LfOverlayBoxSx = {
-    display: 'absolute',
-    justifyContent: 'right',
-    height: '100%',
-    width: '50em',
+    height: 0.5,
+    width: 1,
+    display: 'flex',
+    justifyContent: 'flex-end',
+    mt: '3em',
 }
 
 export const LfTitleBoxSx = {
     display: 'flex',
+    justifyContent: 'right',
 }
 
 export const LfDescBoxSx = {
-    bgcolor: mainTheme.palette.primary.light,
+    bgcolor: mainTheme.palette.secondary.main,
     display: 'flex',
+    justifyContent: 'right',
+    height: 1,
+    px: "1em",
+    py: "1em",
 }
 
 export const FeaturedTitleText = {

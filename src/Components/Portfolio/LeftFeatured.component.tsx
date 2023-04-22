@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from 'react';
-import { LfDescBoxSx, LfImageBoxSx, LfOverlayBoxSx, LfRootBoxSx, LfTitleBoxSx } from "../../Styles/Components/FeaturedSectionStyles";
+import { FeaturedDescText, FeaturedTitleText, LfDescBoxSx, LfImageBoxSx, LfOverlayBoxSx, LfRootBoxSx, LfTitleBoxSx } from "../../Styles/Components/FeaturedSectionStyles";
 import ILeftFeaturedSection from "../../Interfaces/ILeftFeaturedSection";
 
 export function LfRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
@@ -20,6 +20,7 @@ export function LfImageBox({ children }: { children: React.ReactNode | React.Rea
     <>
       <Box
         sx={LfImageBoxSx}
+        style={{ position: "relative" }}
       >
         {children}
       </Box>
@@ -32,6 +33,7 @@ export function LfOverlayBox({ children }: { children: React.ReactNode | React.R
     <>
       <Box
         sx={LfOverlayBoxSx}
+        style={{ position: "absolute" }}
       >
         {children}
       </Box>
@@ -73,30 +75,33 @@ export function LfSection(props: ILeftFeaturedSection) {
             src={lfImg}
             alt=""
             style={{
-              visibility: 'hidden',
-              maxWidth: '100%',
-              maxHeight: '100%',
-              margin: 'auto',
+              width: '100%',
               display: 'block',
             }}></img>
         </LfImageBox>
         <LfOverlayBox>
-          <div style={{ position: "relative" }}>
-            <div style={{ zIndex: 0 }}>
-              <LfTitleBox>
-                <Typography>
-                  {lfTitle}
-                </Typography>
-              </LfTitleBox>
-            </div>
-            <div style={{ zIndex: 1 }}>
-              <LfDescBox>
-                <Typography>
-                  {lfDesc}
-                </Typography>
-              </LfDescBox>
-            </div>
-          </div>
+          <Box
+            sx={{
+              width: 0.5,
+              display: 'flex',
+              flexDirection: 'column',
+            }}
+          >
+            <LfTitleBox>
+              <Typography
+              sx={FeaturedTitleText}
+              >
+                {lfTitle}
+              </Typography>
+            </LfTitleBox>
+            <LfDescBox>
+              <Typography
+              sx={FeaturedDescText}
+              >
+                {lfDesc}
+              </Typography>
+            </LfDescBox>
+          </Box>
         </LfOverlayBox>
       </LfRootBox>
     </>
