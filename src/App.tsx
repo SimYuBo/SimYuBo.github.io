@@ -1,9 +1,9 @@
 import { ThemeProvider } from '@emotion/react';
 import CssBaseline from '@mui/material/CssBaseline';
 import './App.css';
-import PortfolioLayout from './Components/Layouts/_PortfolioLayout.component';
 import { mainTheme } from './Styles/Theme';
 import CustomNavbar from './Utilities/CustomNav';
+import HomeLayout from './Components/Layouts/_HomeLayout.component';
 
 export default function App() {
   return (
@@ -11,7 +11,7 @@ export default function App() {
       <ThemeProvider theme={mainTheme}>
         <CssBaseline />
         <CustomNavbar />
-        <PortfolioLayout />
+        <HomeLayout />
       </ThemeProvider>
     </>
   );
