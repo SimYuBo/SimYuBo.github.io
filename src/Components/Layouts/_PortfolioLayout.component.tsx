@@ -58,9 +58,9 @@ export default function PortfolioLayout() {
                         What have you worked on?
                     </Typography>
                     <LfSection
-                        lfTitle="Title 1"
+                        lfTitle="VR Escape Room"
                         lfImg={FeaturedTestImg}
-                        lfDesc="Description 1"
+                        lfDesc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
                     >
                     </LfSection>
                 </MainContentBox>

@@ -77,6 +77,7 @@ export function LfSection(props: ILeftFeaturedSection) {
             style={{
               width: '100%',
               display: 'block',
+              borderRadius: 3,
             }}></img>
         </LfImageBox>
         <LfOverlayBox>

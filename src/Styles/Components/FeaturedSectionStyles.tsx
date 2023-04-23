@@ -12,7 +12,7 @@ export const LfRootBoxSx = {
 export const LfImageBoxSx = {
     postition: 'absolute',
     bgcolor: "#FFFFF",
-    width: '48em',
+    width: '40em',
 }
 
 export const LfOverlayBoxSx = {
@@ -20,20 +20,22 @@ export const LfOverlayBoxSx = {
     width: 1,
     display: 'flex',
     justifyContent: 'flex-end',
-    mt: '3em',
+    mt: '2em',
 }
 
 export const LfTitleBoxSx = {
     display: 'flex',
     justifyContent: 'right',
+    borderRadius: '5em',
 }
 
 export const LfDescBoxSx = {
     bgcolor: mainTheme.palette.secondary.main,
+    borderRadius: 1,
     display: 'flex',
     justifyContent: 'right',
-    height: '16em',
-    px: "1em",
+    height: '40%',
+    px: "0.3em",
     py: "1em",
     mt: '1em',
 }
@@ -46,7 +48,7 @@ export const FeaturedTitleText = {
 
 export const FeaturedDescText = {
     mx: '1.3em',
-    fontSize: '1.3em',
-    fontWeight: 600,
+    fontSize: '1.2em',
+    fontWeight: 0,
     color: mainTheme.palette.primary.light,
 }

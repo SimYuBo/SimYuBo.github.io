@@ -9,19 +9,19 @@ export const SmallDescriptionBoxSx = {
 }
 
 export const SmallBrightText = {
-    fontSize: '1.4em',
+    fontSize: '1.2em',
     fontWeight: 0,
     color: mainTheme.palette.primary.main,
 }
 
 export const SmallDarkText = {
-    fontSize: '1.4em',
+    fontSize: '1.2em',
     fontWeight: 0,
     color: mainTheme.palette.primary.dark,
 }
 
 export const SmallLightText = {
-    fontSize: '1.4em',
+    fontSize: '1.2em',
     fontWeight: 0,
     color: mainTheme.palette.primary.light,
 }
@@ -35,7 +35,7 @@ export const MediumLightHeader = {
 
 export const RootBoxSx = {
     display: 'block',
-    mx: '18em',
+    mx: '24em',
 }
 
 export const FlexBoxSx = {
@@ -47,5 +47,5 @@ export const BlockBoxSx = {
 }
 
 export const MainContentBoxSx = {
-    my: '25em',
+    my: '22em',
 }
