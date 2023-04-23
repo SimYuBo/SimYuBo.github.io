@@ -40,6 +40,46 @@ export const LfDescBoxSx = {
     mt: '1em',
 }
 
+export const RfRootBoxSx = {
+    bgcolor: mainTheme.palette.primary.dark,
+    position: 'relative',
+    height: "26em",
+    width: '1',
+    display: 'flex',
+    mb: '8em'
+}
+
+export const RfImageBoxSx = {
+    postition: 'absolute',
+    bgcolor: "#FFFFF",
+    width: '40em',
+}
+
+export const RfOverlayBoxSx = {
+    height: 1,
+    width: 1,
+    display: 'flex',
+    justifyContent: 'flex-end',
+    mt: '2em',
+}
+
+export const RfTitleBoxSx = {
+    display: 'flex',
+    justifyContent: 'right',
+    borderRadius: '5em',
+}
+
+export const RfDescBoxSx = {
+    bgcolor: mainTheme.palette.secondary.main,
+    borderRadius: 1,
+    display: 'flex',
+    justifyContent: 'right',
+    height: '40%',
+    px: "0.3em",
+    py: "1em",
+    mt: '1em',
+}
+
 export const FeaturedTitleText = {
     fontSize: '1.8em',
     fontWeight: 800,

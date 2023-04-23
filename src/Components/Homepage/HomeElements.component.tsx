@@ -1,7 +1,6 @@
 import { Box } from "@mui/material";
 import React from 'react';
 import { BlockBoxSx, FlexBoxSx, MainContentBoxSx, RootBoxSx } from "../../Styles/Homepage/HomeStyles";
-import ILeftFeaturedSection from "../../Interfaces/ILeftFeaturedSection";
 
 export function RootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
     return (

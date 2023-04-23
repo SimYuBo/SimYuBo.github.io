@@ -1,7 +1,7 @@
 import { Box, Typography } from "@mui/material";
 import React from 'react';
 import { FeaturedDescText, FeaturedTitleText, LfDescBoxSx, LfImageBoxSx, LfOverlayBoxSx, LfRootBoxSx, LfTitleBoxSx } from "../../Styles/Components/FeaturedSectionStyles";
-import ILeftFeaturedSection from "../../Interfaces/ILeftFeaturedSection";
+import { lfSectionProps } from "../../Interfaces/IFeaturedSection";
 
 function LfRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
   return (
@@ -65,7 +65,7 @@ function LfDescBox({ children }: { children: React.ReactNode | React.ReactNode[]
   );
 }
 
-export function LfSection(props: ILeftFeaturedSection) {
+export function LfSection(props: lfSectionProps) {
   const { lfTitle, lfImg, lfDesc } = props
   return (
     <>
@@ -90,14 +90,14 @@ export function LfSection(props: ILeftFeaturedSection) {
           >
             <LfTitleBox>
               <Typography
-              sx={FeaturedTitleText}
+                sx={FeaturedTitleText}
               >
                 {lfTitle}
               </Typography>
             </LfTitleBox>
             <LfDescBox>
               <Typography
-              sx={FeaturedDescText}
+                sx={FeaturedDescText}
               >
                 {lfDesc}
               </Typography>

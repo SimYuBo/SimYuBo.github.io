@@ -5,6 +5,7 @@ import '../../Styles/Homepage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
 import { LfSection } from '../Homepage/LeftFeatured.component';
+import { RfSection } from '../Homepage/RightFeatured.component';
 
 export default function HomeLayout() {
     return (
@@ -57,6 +58,18 @@ export default function HomeLayout() {
                     >
                         What have you worked on?
                     </Typography>
+                    <LfSection
+                        lfTitle="VR Escape Room"
+                        lfImg={FeaturedTestImg}
+                        lfDesc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
+                    >
+                    </LfSection>
+                    <RfSection
+                        rfTitle="VR Escape Room"
+                        rfImg={FeaturedTestImg}
+                        rfDesc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
+                    >
+                    </RfSection>
                     <LfSection
                         lfTitle="VR Escape Room"
                         lfImg={FeaturedTestImg}
