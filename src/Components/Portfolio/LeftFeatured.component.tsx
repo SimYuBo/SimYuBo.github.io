@@ -3,7 +3,7 @@ import React from 'react';
 import { FeaturedDescText, FeaturedTitleText, LfDescBoxSx, LfImageBoxSx, LfOverlayBoxSx, LfRootBoxSx, LfTitleBoxSx } from "../../Styles/Components/FeaturedSectionStyles";
 import ILeftFeaturedSection from "../../Interfaces/ILeftFeaturedSection";
 
-export function LfRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
+function LfRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
   return (
     <>
       <Box
@@ -15,7 +15,7 @@ export function LfRootBox({ children }: { children: React.ReactNode | React.Reac
   );
 }
 
-export function LfImageBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
+function LfImageBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
   return (
     <>
       <Box
@@ -28,7 +28,7 @@ export function LfImageBox({ children }: { children: React.ReactNode | React.Rea
   );
 }
 
-export function LfOverlayBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
+function LfOverlayBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
   return (
     <>
       <Box
@@ -41,7 +41,7 @@ export function LfOverlayBox({ children }: { children: React.ReactNode | React.R
   );
 }
 
-export function LfTitleBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
+function LfTitleBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
   return (
     <>
       <Box
@@ -53,7 +53,7 @@ export function LfTitleBox({ children }: { children: React.ReactNode | React.Rea
   );
 }
 
-export function LfDescBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
+function LfDescBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
   return (
     <>
       <Box

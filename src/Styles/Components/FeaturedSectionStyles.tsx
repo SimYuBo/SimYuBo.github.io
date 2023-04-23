@@ -16,7 +16,7 @@ export const LfImageBoxSx = {
 }
 
 export const LfOverlayBoxSx = {
-    height: 0.5,
+    height: 1,
     width: 1,
     display: 'flex',
     justifyContent: 'flex-end',
@@ -32,21 +32,21 @@ export const LfDescBoxSx = {
     bgcolor: mainTheme.palette.secondary.main,
     display: 'flex',
     justifyContent: 'right',
-    height: 1,
+    height: '16em',
     px: "1em",
     py: "1em",
+    mt: '1em',
 }
 
 export const FeaturedTitleText = {
-    mx: '1.3em',
-    fontSize: '1.1em',
-    fontWeight: 600,
+    fontSize: '1.8em',
+    fontWeight: 800,
     color: mainTheme.palette.primary.contrastText,
 }
 
 export const FeaturedDescText = {
     mx: '1.3em',
-    fontSize: '1.1em',
+    fontSize: '1.3em',
     fontWeight: 600,
-    color: mainTheme.palette.primary.contrastText,
+    color: mainTheme.palette.primary.light,
 }
