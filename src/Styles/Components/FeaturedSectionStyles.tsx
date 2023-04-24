@@ -10,9 +10,11 @@ export const LfRootBoxSx = {
 }
 
 export const LfImageBoxSx = {
-    postition: 'absolute',
+    position: 'absolute',
     bgcolor: "#FFFFF",
     width: '40em',
+    display: 'flex',
+    justifyContent: 'flex-end',
 }
 
 export const LfOverlayBoxSx = {
@@ -50,22 +52,26 @@ export const RfRootBoxSx = {
 }
 
 export const RfImageBoxSx = {
-    postition: 'absolute',
+    position: 'absolute',
     bgcolor: "#FFFFF",
     width: '40em',
+    left: '43.5%',
+    zIndex: 1,
 }
 
 export const RfOverlayBoxSx = {
     height: 1,
     width: 1,
     display: 'flex',
-    justifyContent: 'flex-end',
+    justifyContent: 'flex-start',
     mt: '2em',
+    position: 'relative',
+    zIndex: 2,
 }
 
 export const RfTitleBoxSx = {
     display: 'flex',
-    justifyContent: 'right',
+    justifyContent: 'left',
     borderRadius: '5em',
 }
 
@@ -73,7 +79,7 @@ export const RfDescBoxSx = {
     bgcolor: mainTheme.palette.secondary.main,
     borderRadius: 1,
     display: 'flex',
-    justifyContent: 'right',
+    justifyContent: 'left',
     height: '40%',
     px: "0.3em",
     py: "1em",
