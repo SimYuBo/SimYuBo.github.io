@@ -1,6 +1,6 @@
 import { AppBar } from "@mui/material";
 import { useEffect, useState } from "react";
-import { Navbar, NavLink, NavMenu } from '../Components/Navbar/NavbarElements.component';
+import { Navbar, NavLink, NavMenu } from '../Components/Miscellaneous/NavbarElements.component';
 import { NavbarState } from "../Interfaces/CustomNavProps";
 import logo from '../Assets/Personal_Logo_Transparent.png'
 

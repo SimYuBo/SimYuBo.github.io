@@ -5,6 +5,7 @@ import '../../Styles/Homepage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
 import { LfSection, RfSection } from '../Homepage/FeaturedSection.component';
+import { Footer } from '../Miscellaneous/Footer.component';
 
 export default function HomeLayout() {
     return (
@@ -76,6 +77,7 @@ export default function HomeLayout() {
                     >
                     </LfSection>
                 </MainContentBox>
+                <Footer/>
             </RootBox>
         </>
     );
