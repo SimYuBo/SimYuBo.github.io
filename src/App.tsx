@@ -4,6 +4,10 @@ import './App.css';
 import { mainTheme } from './Styles/Theme';
 import CustomNavbar from './Utilities/CustomNav';
 import HomeLayout from './Components/Layouts/_HomeLayout.component';
+import AboutLayout from './Components/Layouts/_AboutLayout.component';
+import PortfolioLayout from './Components/Layouts/_PortfolioLayout.component';
+import ContactLayout from './Components/Layouts/_ContactLayout.component';
+import { Route, Routes } from 'react-router-dom';
 
 export default function App() {
   return (
@@ -11,7 +15,12 @@ export default function App() {
       <ThemeProvider theme={mainTheme}>
         <CssBaseline />
         <CustomNavbar />
-        <HomeLayout />
+        <Routes>
+          <Route path='/' element={<HomeLayout />}/>
+          <Route path='/about' element={<AboutLayout />}/>
+          <Route path='/portfolio' element={<PortfolioLayout />}/>
+          <Route path='/contact' element={<ContactLayout />}/>
+        </Routes>
       </ThemeProvider>
     </>
   );

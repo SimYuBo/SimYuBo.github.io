@@ -1,12 +1,10 @@
 import { mainTheme } from "../Theme";
 
 export const LfRootBoxSx = {
-    bgcolor: mainTheme.palette.primary.dark,
     position: 'relative',
     height: "26em",
     width: '1',
     display: 'flex',
-    mb: '8em'
 }
 
 export const LfImageBoxSx = {

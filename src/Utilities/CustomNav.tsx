@@ -1,7 +1,7 @@
 import { AppBar } from "@mui/material";
 import { useEffect, useState } from "react";
 import { Navbar, NavLink, NavMenu } from '../Components/Miscellaneous/NavbarElements.component';
-import { NavbarState } from "../Interfaces/CustomNavProps";
+import { NavbarState } from "../Interfaces/ICustomNav";
 import logo from '../Assets/Personal_Logo_Transparent.png'
 
 const CustomNavbar: React.FC = () => {
@@ -37,7 +37,7 @@ const CustomNavbar: React.FC = () => {
                         <img src={logo} alt="Logo" style={{ width: "2em", height: "auto" }}></img>
                     </NavLink> */}
                     <NavLink
-                    customNavLink = "/home"
+                    customNavLink = "/"
                     >
                         Home
                     </NavLink>

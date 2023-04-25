@@ -47,5 +47,5 @@ export const BlockBoxSx = {
 }
 
 export const MainContentBoxSx = {
-    my: '22em',
+    mt: '22em',
 }
