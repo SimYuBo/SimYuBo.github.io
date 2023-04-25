@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
-import { MediumLightHeader, MixedTypographyBoxSx, SmallBrightText, SmallDescriptionBoxSx, SmallLightText } from '../../Styles/Homepage/HomeStyles';
+import { MediumLightHeader, MixedTypographyBoxSx, SmallBrightText, SmallDescriptionBoxSx, SmallLightText } from '../../Styles/HomePage/HomeStyles';
 import { FlexBlockBox, FlexBox, MainContentBox, RootBox } from '../Homepage/HomeElements.component';
-import '../../Styles/Homepage/HomeStyles.css';
+import '../../Styles/HomePage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
 import { LfSection, RfSection } from '../Homepage/FeaturedSection.component';
@@ -99,6 +99,18 @@ export default function HomeLayout() {
                             ButtonLink='/portfolio'
                         />
                     </Box>
+                </MainContentBox>
+                <MainContentBox>
+                    <Typography
+                        sx={MediumLightHeader}
+                    >
+                        How can I reach you?
+                    </Typography>
+                    <Typography
+                        sx={SmallLightText}
+                    >
+                        Don't be afraid to reach out to me! Drop me a message via the following icons below or shoot me an email if you feel like it!
+                    </Typography>
                 </MainContentBox>
                 <Footer />
             </RootBox>

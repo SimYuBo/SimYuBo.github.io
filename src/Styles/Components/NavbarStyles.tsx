@@ -11,11 +11,6 @@ export const NavbarRootSx = {
 
 export const NavbarMenuSx = {
     display: 'flex',
-    justifyContent: 'right',
-}
-
-export const NavbarLogo = {
-    
 }
 
 export const LinkTypography = {

@@ -30,29 +30,29 @@ const CustomNavbar: React.FC = () => {
     return (
         <AppBar position="fixed" style={{ transform: state.visible ? 'translateY(0)' : 'translateY(-100%)', transition: 'transform 0.3s ease' }} enableColorOnDark>
             <Navbar>
+                <NavLink
+                    customNavLink="/"
+                >
+                    <img src={logo} alt="Logo" style={{ width: "2em", height: "auto", zIndex: 1, position: 'absolute', display: 'flex', justifyContent: 'center', top: '1em' }}></img>
+                </NavLink>
                 <NavMenu>
-                    {/* <NavLink
-                    customNavLink = "/home"
-                    >
-                        <img src={logo} alt="Logo" style={{ width: "2em", height: "auto" }}></img>
-                    </NavLink> */}
                     <NavLink
-                    customNavLink = "/"
+                        customNavLink="/"
                     >
                         Home
                     </NavLink>
                     <NavLink
-                    customNavLink = "/about"
+                        customNavLink="/about"
                     >
                         About
                     </NavLink>
                     <NavLink
-                    customNavLink = "/portfolio"
+                        customNavLink="/portfolio"
                     >
                         Portfolio
                     </NavLink>
                     <NavLink
-                    customNavLink = "/contact"
+                        customNavLink="/contact"
                     >
                         Contact
                     </NavLink>

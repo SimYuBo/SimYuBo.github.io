@@ -15,6 +15,7 @@ export function CustomButton(props: ButtonProps) {
             bgColor: mainTheme.palette.primary.dark,
             borderColor: mainTheme.palette.primary.main,
             px: '2em',
+            textTransform: 'none',
             borderWidth: '2px',
             '&:hover': {
               borderWidth: '2px',
