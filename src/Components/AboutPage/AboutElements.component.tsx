@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { BottomMarginSx, ContentBoxSx, DescriptionBoxSx, ImageBoxSx, SkillsTextBoxSx } from "../../Styles/AboutPage/AboutStyles";
+import { ContentBoxSx, DescriptionBoxSx, ImageBoxSx, SkillsTextBoxSx } from "../../Styles/AboutPage/AboutStyles";
 import { LightText } from "../Miscellaneous/GlobalElements.component";
 import ProfileTestImg from "../../Assets/350x500.svg"
 
@@ -61,13 +61,13 @@ export function ImageDescription() {
 }
 
 export function SkillsTextBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
-    return(
+    return (
         <>
-        <Box
-        sx={SkillsTextBoxSx}
-        >
-{children}
-        </Box>
+            <Box
+                sx={SkillsTextBoxSx}
+            >
+                {children}
+            </Box>
         </>
     );
 }

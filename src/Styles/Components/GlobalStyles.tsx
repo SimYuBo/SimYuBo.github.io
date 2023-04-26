@@ -17,6 +17,10 @@ export const MainContentBoxSx = {
     mt: '22em',
 }
 
+export const TopMarginBoxSx = {
+    mt: '12em',
+}
+
 export const ContrastTextSx = {
     fontSize: '1.2em',
     fontWeight: 0,

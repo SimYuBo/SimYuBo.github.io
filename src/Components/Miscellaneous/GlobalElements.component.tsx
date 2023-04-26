@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from 'react';
-import { BlockBoxSx, ContrastTextSx, DarkTextSx, FlexBoxSx, LightHeaderSx, LightTextSx, LightTitleSx, MainContentBoxSx, RootBoxSx } from "../../Styles/Components/GlobalStyles";
+import { BlockBoxSx, ContrastTextSx, DarkTextSx, FlexBoxSx, LightHeaderSx, LightTextSx, LightTitleSx, MainContentBoxSx, RootBoxSx, TopMarginBoxSx } from "../../Styles/Components/GlobalStyles";
 
 export function RootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
     return (
@@ -19,6 +19,18 @@ export function MainContentBox({ children }: { children: React.ReactNode | React
         <>
             <Box
                 sx={MainContentBoxSx}
+            >
+                {children}
+            </Box>
+        </>
+    );
+}
+
+export function TopMarginBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
+    return (
+        <>
+            <Box
+                sx={TopMarginBoxSx}
             >
                 {children}
             </Box>
