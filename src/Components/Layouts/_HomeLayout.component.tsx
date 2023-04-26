@@ -1,12 +1,12 @@
 import { Box, Typography } from '@mui/material';
-import { MediumLightHeader, MixedTypographyBoxSx, SmallBrightText, SmallDescriptionBoxSx, SmallLightText } from '../../Styles/HomePage/HomeStyles';
-import { FlexBlockBox, FlexBox, MainContentBox, RootBox } from '../Homepage/HomeElements.component';
+import { MixedTypographyBoxSx, SmallDescriptionBoxSx } from '../../Styles/HomePage/HomeStyles';
 import '../../Styles/HomePage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
-import { LfSection, RfSection } from '../Homepage/FeaturedSection.component';
+import { LfSection, RfSection } from '../HomePage/FeaturedSection.component';
 import { Footer } from '../Miscellaneous/Footer.component';
 import { CustomButton } from '../Miscellaneous/Button.component';
+import { RootBox, MainContentBox, FlexBlockBox, FlexBox, ContrastText, LightText, LightHeader } from '../Miscellaneous/GlobalElements.component';
 
 export default function HomeLayout() {
     return (
@@ -14,11 +14,9 @@ export default function HomeLayout() {
             <RootBox>
                 <MainContentBox>
                     <FlexBlockBox>
-                        <Typography
-                            sx={SmallBrightText}
-                        >
+                        <ContrastText>
                             Hello, my name is Yu Bo
-                        </Typography>
+                        </ContrastText>
                         <Box
                             sx={MixedTypographyBoxSx}
                         >
@@ -30,37 +28,29 @@ export default function HomeLayout() {
                         <Box
                             sx={SmallDescriptionBoxSx}
                         >
-                            <Typography
-                                sx={SmallLightText}
-                            >
+                            <LightText>
                                 I specialise in web development and always do my best to provide users with a fun and unique experience.
-                            </Typography>
+                            </LightText>
                         </Box>
                     </FlexBlockBox>
                 </MainContentBox>
                 <MainContentBox>
                     <FlexBox>
                         <FlexBlockBox>
-                            <Typography
-                                sx={MediumLightHeader}
-                            >
+                            <LightHeader>
                                 Who are you?
-                            </Typography>
-                            <Typography
-                                sx={SmallLightText}
-                            >
+                            </LightHeader>
+                            <LightText>
                                 Hello! my name is Yu Bo, I am currently a third year student at republic polytechnic studying for a diploma in Digital Design and Development. I always strive for my projects to be an enjoyable experience for users, and to create something I will be proud of at the end of the day.
-                            </Typography>
+                            </LightText>
                         </FlexBlockBox>
                         <img src={ProfileTestImg} alt=""></img>
                     </FlexBox>
                 </MainContentBox>
                 <MainContentBox>
-                    <Typography
-                        sx={MediumLightHeader}
-                    >
+                    <LightHeader>
                         What have you worked on?
-                    </Typography>
+                    </LightHeader>
                     <Box
                         sx={{ mb: '8em' }}
                     >
@@ -101,16 +91,12 @@ export default function HomeLayout() {
                     </Box>
                 </MainContentBox>
                 <MainContentBox>
-                    <Typography
-                        sx={MediumLightHeader}
-                    >
+                    <LightHeader>
                         How can I reach you?
-                    </Typography>
-                    <Typography
-                        sx={SmallLightText}
-                    >
+                    </LightHeader>
+                    <LightText>
                         Don't be afraid to reach out to me! Drop me a message via the following icons below or shoot me an email if you feel like it!
-                    </Typography>
+                    </LightText>
                 </MainContentBox>
                 <Footer />
             </RootBox>

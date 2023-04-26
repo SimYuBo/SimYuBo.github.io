@@ -1,16 +1,22 @@
-export const RootBoxSx = {
-    display: 'block',
-    mx: '24em',
-}
-
-export const FlexBoxSx = {
+export const ContentBoxSx = {
     display: 'flex',
+    justifyContent: 'space-between'
 }
 
-export const BlockBoxSx = {
-    display: 'block',
+export const ImageBoxSx = {
+    width: '40%',
+    height: 'auto',
+    mr: '2em',
 }
 
-export const MainContentBoxSx = {
-    mt: '22em',
+export const DescriptionBoxSx = {
+    ml: '2em',
+}
+
+export const BottomMarginSx = {
+    mb: '8em',
+}
+
+export const SkillsTextBoxSx = {
+    mb: '2em',
 }

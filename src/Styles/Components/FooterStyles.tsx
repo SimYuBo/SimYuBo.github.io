@@ -5,6 +5,7 @@ export const FooterBoxSx = {
     width: '100%',
     textAlign: 'center',
     padding: '0.4em',
+    mt: '8em'
 }
 
 export const FooterText= {
