@@ -11,6 +11,7 @@ export const LfImageBoxSx = {
     position: 'absolute',
     bgcolor: "#FFFFF",
     width: '40em',
+    height: '24em',
     display: 'flex',
     justifyContent: 'flex-end',
 }
@@ -53,6 +54,7 @@ export const RfImageBoxSx = {
     position: 'absolute',
     bgcolor: "#FFFFF",
     width: '40em',
+    height: '24em',
     left: '43.5%',
     zIndex: 1,
 }

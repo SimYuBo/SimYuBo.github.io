@@ -24,10 +24,14 @@ export const TitleBoxRightSx = {
 
 export const DescriptionBoxLeftSx = {
     display: 'flex',
-    justifyContent: 'left'
+    justifyContent: 'left',
+    textAlign: 'left',
+    mr: '1em',
 }
 
 export const DescriptionBoxRightSx = {
     display: 'flex',
-    justifyContent: 'right'
+    justifyContent: 'right',
+    textAlign: 'right',
+    ml: '1em',
 }

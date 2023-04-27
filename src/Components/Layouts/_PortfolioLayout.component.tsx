@@ -2,6 +2,7 @@ import { Footer } from "../Miscellaneous/Footer.component";
 import { RootBox, TopMarginBox, LightHeader } from "../Miscellaneous/GlobalElements.component";
 import { PortfolioItemLeft, PortfolioItemRight } from "../PortfolioPage/PortfolioElements.component";
 import FeaturedTestImg from "../../Assets/500x300.svg"
+import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
 
 export default function PortfolioLayout() {
     return (
@@ -12,37 +13,39 @@ export default function PortfolioLayout() {
                         What projects have you worked on?
                     </LightHeader>
                     <PortfolioItemLeft
-                        Img={FeaturedTestImg}
-                        Title="Project 1"
-                        Desc="Description 1"
+                        Img={ProjectImage1}
+                        Title="VR Escape Room"
+                        Desc="This VR escape room was an assignment that I was tasked with to complete using C# in Unity.
+                        Overall, this was an eye opening experience for me as it was the first time learning C#, not to mention how excited I was to make my first ever game, in VR nonetheless!
+                        What kid hasn't thought of making their own game."
                     />
                 </TopMarginBox>
                 <TopMarginBox>
                     <PortfolioItemRight
                     Img={FeaturedTestImg}
                     Title="Project 2"
-                    Desc="Description 2"
+                    Desc="vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin"
                     />
                 </TopMarginBox>
                 <TopMarginBox>
                     <PortfolioItemLeft
                         Img={FeaturedTestImg}
                         Title="Project 3"
-                        Desc="Description 3"
+                        Desc="ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet sit amet cursus sit amet dictum sit amet justo donec enim diam vulputate ut pharetra sit amet aliquam id diam maecenas ultricies mi eget mauris pharetra et ultrices neque"
                     />
                 </TopMarginBox>
                 <TopMarginBox>
                     <PortfolioItemRight
                     Img={FeaturedTestImg}
                     Title="Project 4"
-                    Desc="Description 4"
+                    Desc="quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis"
                     />
                 </TopMarginBox>
                 <TopMarginBox>
                     <PortfolioItemLeft
                         Img={FeaturedTestImg}
                         Title="Project 5"
-                        Desc="Description 5"
+                        Desc="nunc eget lorem dolor sed viverra ipsum nunc aliquet bibendum enim facilisis gravida neque convallis a cras semper auctor neque vitae tempus quam pellentesque nec nam aliquam sem et tortor consequat id porta nibh venenatis cras sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac tincidunt vitae semper quis lectus nulla"
                     />
                 </TopMarginBox>
                 <Footer />

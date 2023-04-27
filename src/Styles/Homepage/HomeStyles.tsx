@@ -1,5 +1,3 @@
-import { mainTheme } from "../Theme";
-
 export const MixedTypographyBoxSx = {
     display: 'flex',
 }

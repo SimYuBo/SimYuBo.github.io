@@ -3,6 +3,7 @@ import { MixedTypographyBoxSx, SmallDescriptionBoxSx } from '../../Styles/HomePa
 import '../../Styles/HomePage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
+import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
 import { LfSection, RfSection } from '../HomePage/FeaturedSection.component';
 import { Footer } from '../Miscellaneous/Footer.component';
 import { CustomButton } from '../Miscellaneous/Button.component';
@@ -56,7 +57,7 @@ export default function HomeLayout() {
                     >
                         <LfSection
                             Title="VR Escape Room"
-                            Img={FeaturedTestImg}
+                            Img={ProjectImage1}
                             Desc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
                         >
                         </LfSection>
@@ -65,16 +66,16 @@ export default function HomeLayout() {
                         sx={{ mb: '8em' }}
                     >
                         <RfSection
-                            Title="VR Escape Room"
+                            Title="Project 2"
                             Img={FeaturedTestImg}
-                            Desc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
+                            Desc="blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu"
                         >
                         </RfSection>
                     </Box>
                     <LfSection
-                        Title="VR Escape Room"
+                        Title="Project 3"
                         Img={FeaturedTestImg}
-                        Desc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
+                        Desc="blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu"
                     >
                     </LfSection>
                     <Box
