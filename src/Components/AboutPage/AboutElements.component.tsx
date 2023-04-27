@@ -41,6 +41,18 @@ function DescriptionBox({ children }: { children: React.ReactNode | React.ReactN
     );
 }
 
+export function SkillsTextBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
+    return (
+        <>
+            <Box
+                sx={SkillsTextBoxSx}
+            >
+                {children}
+            </Box>
+        </>
+    );
+}
+
 export function ImageDescription() {
     return (
         <>
@@ -56,18 +68,6 @@ export function ImageDescription() {
                     I don't think of programming as something used to create, I think of it as a way to solve problems. My way of thinking has allowed myself to see assignments as separate problems that I have to solve which enhances my productivity.
                 </DescriptionBox>
             </ContentBox>
-        </>
-    );
-}
-
-export function SkillsTextBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
-    return (
-        <>
-            <Box
-                sx={SkillsTextBoxSx}
-            >
-                {children}
-            </Box>
         </>
     );
 }

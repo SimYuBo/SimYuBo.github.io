@@ -1,5 +1,5 @@
 import { Footer } from "../Miscellaneous/Footer.component";
-import { RootBox, TopMarginBox, MainContentBox, LightHeader } from "../Miscellaneous/GlobalElements.component";
+import { RootBox, TopMarginBox, LightHeader } from "../Miscellaneous/GlobalElements.component";
 import { PortfolioItemLeft, PortfolioItemRight } from "../PortfolioPage/PortfolioElements.component";
 import FeaturedTestImg from "../../Assets/500x300.svg"
 
