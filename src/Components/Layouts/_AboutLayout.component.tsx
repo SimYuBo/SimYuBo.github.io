@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { ImageDescription, SkillsTextBox } from "../AboutPage/AboutElements.component";
 import { Footer } from "../Miscellaneous/Footer.component";
-import { FlexBox, LightHeader, LightText, LightTitle, MainContentBox, RootBox, TopMarginBox } from "../Miscellaneous/GlobalElements.component";
+import { LightHeader, LightText, LightTitle, MainContentBox, RootBox, TopMarginBox } from "../Miscellaneous/GlobalElements.component";
 
 export default function AboutLayout() {
     return (
