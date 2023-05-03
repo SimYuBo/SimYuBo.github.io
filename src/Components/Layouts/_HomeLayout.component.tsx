@@ -9,6 +9,7 @@ import { RootBox, MainContentBox, FlexBlockBox, FlexBox, ContrastText, LightText
 
 export default function HomeLayout() {
     return (
+        
         <>
             <RootBox>
                 <MainContentBox>
