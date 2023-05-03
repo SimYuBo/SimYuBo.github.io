@@ -1,5 +1,4 @@
 import { Box } from '@mui/material';
-import '../../Styles/HomePage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
 import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
