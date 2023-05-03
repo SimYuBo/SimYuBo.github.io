@@ -1,6 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from 'react';
-import { FeaturedDescText, FeaturedTitleText, LfDescBoxSx, LfImageBoxSx, LfOverlayBoxSx, LfRootBoxSx, LfTitleBoxSx, RfDescBoxSx, RfImageBoxSx, RfOverlayBoxSx, RfRootBoxSx, RfTitleBoxSx } from "../../Styles/HomePage/FeaturedSectionStyles";
+import { FeaturedDescText, FeaturedTitleText, LfDescBoxSx, LfImageBoxSx, LfOverlayBoxSx, LfRootBoxSx, LfTitleBoxSx, RfDescBoxSx, RfImageBoxSx, RfOverlayBoxSx, RfRootBoxSx, RfTitleBoxSx } from "../../Styles/Home/FeaturedSectionStyles";
 import { FeaturedSectionProps } from "../../Interfaces/IFeaturedSection";
 
 function LfRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
