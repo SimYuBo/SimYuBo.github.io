@@ -1,6 +1,6 @@
 import { Box } from "@mui/material";
 import { PortfolioItemProps } from "../../Interfaces/IPortfolioItem";
-import { ContentBoxSx, DescriptionBoxLeftSx, DescriptionBoxRightSx, ImageBoxSx, PortfolioRootBoxSx, TitleBoxLeftSx, TitleBoxRightSx } from "../../Styles/Portfolio/PortfolioStyles";
+import { ContentBoxSx, DescriptionBoxLeftSx, DescriptionBoxRightSx, ImageBoxSx, PortfolioRootBoxSx, TitleBoxLeftSx, TitleBoxRightSx } from "../../Styles/PortfolioPage/PortfolioStyles";
 import { LightText, LightTitle } from "../Miscellaneous/GlobalElements.component";
 
 function PortfolioRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
