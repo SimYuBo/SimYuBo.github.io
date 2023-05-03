@@ -1,9 +1,9 @@
 import { Box } from '@mui/material';
-import '../../Styles/HomePage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
 import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
 import { LfSection, RfSection } from '../HomePage/FeaturedSection.component';
+import '../../Styles/HomePage/HomeStyles.css';
 import { Footer } from '../Miscellaneous/Footer.component';
 import { CustomButton } from '../Miscellaneous/Button.component';
 import { RootBox, MainContentBox, FlexBlockBox, FlexBox, ContrastText, LightText, LightHeader } from '../Miscellaneous/GlobalElements.component';
