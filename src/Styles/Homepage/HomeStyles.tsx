@@ -1,8 +1,3 @@
-export const MixedTypographyBoxSx = {
-    display: 'flex',
-}
+export const blank = {
 
-export const SmallDescriptionBoxSx = {
-    maxWidth: "31em",
 }
-

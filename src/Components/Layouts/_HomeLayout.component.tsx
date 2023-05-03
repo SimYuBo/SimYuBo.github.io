@@ -1,5 +1,4 @@
-import { Box, Typography } from '@mui/material';
-import { MixedTypographyBoxSx, SmallDescriptionBoxSx } from '../../Styles/HomePage/HomeStyles';
+import { Box } from '@mui/material';
 import '../../Styles/HomePage/HomeStyles.css';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileTestImg from "../../Assets/350x500.svg"
@@ -18,21 +17,11 @@ export default function HomeLayout() {
                         <ContrastText>
                             Hello, my name is Yu Bo
                         </ContrastText>
-                        <Box
-                            sx={MixedTypographyBoxSx}
-                        >
-                            <Typography>
-                                <span className='MainHeader'>I am a software Designer</span>
-                                <span className='MainHeaderAlt'>/Developer.</span>
-                            </Typography>
-                        </Box>
-                        <Box
-                            sx={SmallDescriptionBoxSx}
-                        >
-                            <LightText>
-                                I specialise in web development and always do my best to provide users with a fun and unique experience.
-                            </LightText>
-                        </Box>
+                        <span className='MainHeader'>I am a software Designer</span>
+                        <span className='MainHeaderAlt'>/Developer.</span>
+                        <LightText>
+                            I specialise in web development and always do my best to provide users with a fun and unique experience.
+                        </LightText>
                     </FlexBlockBox>
                 </MainContentBox>
                 <MainContentBox>
