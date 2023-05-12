@@ -2,6 +2,7 @@ import { Box } from '@mui/material';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileImg from "../../Assets/Profile Image.png"
 import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
+import ProjectImage2 from "../../Assets/Project 2.jpg"
 import { LfSection, RfSection } from '../Home/FeaturedSection.component';
 import '../../Styles/Home/HomeStyles.css';
 import { Footer } from '../Miscellaneous/Footer.component';
@@ -55,9 +56,9 @@ export default function HomeLayout() {
                         sx={{ mb: '8em' }}
                     >
                         <RfSection
-                            Title="Project 2"
-                            Img={FeaturedTestImg}
-                            Desc="blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu"
+                            Title="Little Toy Kingdom"
+                            Img={ProjectImage2}
+                            Desc="Little Toy Kingdom is a concept design for a online store that retails toys for children"
                         >
                         </RfSection>
                     </Box>

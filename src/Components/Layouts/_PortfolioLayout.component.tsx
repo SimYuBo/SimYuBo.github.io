@@ -3,6 +3,7 @@ import { RootBox, TopMarginBox, LightHeader } from "../Miscellaneous/GlobalEleme
 import { PortfolioItemLeft, PortfolioItemRight } from "../PortfolioPage/PortfolioElements.component";
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
+import ProjectImage2 from "../../Assets/Project 2.jpg"
 
 export default function PortfolioLayout() {
     return (
@@ -22,9 +23,9 @@ export default function PortfolioLayout() {
                 </TopMarginBox>
                 <TopMarginBox>
                     <PortfolioItemRight
-                    Img={FeaturedTestImg}
-                    Title="Project 2"
-                    Desc="vitae ultricies leo integer malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel facilisis volutpat est velit egestas dui id ornare arcu odio ut sem nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est ultricies integer quis auctor elit sed vulputate mi sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada proin"
+                    Img={ProjectImage2}
+                    Title="Little Toy Kingdom"
+                    Desc="Little Toy Kingdom is a concept design for a toy store that wants to transition online. It is a practice task I used to hone my skills in Web Design, teaching me good practices in designing an online store."
                     />
                 </TopMarginBox>
                 <TopMarginBox>
