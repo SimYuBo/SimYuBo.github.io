@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { ContentBoxSx, DescriptionBoxSx, ImageBoxSx, SkillsTextBoxSx } from "../../Styles/AboutPage/AboutStyles";
 import { LightText } from "../Miscellaneous/GlobalElements.component";
-import ProfileTestImg from "../../Assets/350x500.svg"
+import ProfileImg from "../../Assets/Profile Image.png"
 
 function ContentBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
     return (
@@ -58,10 +58,10 @@ export function ImageDescription() {
         <>
             <ContentBox>
                 <ImageBox>
-                    <img src={ProfileTestImg} alt=""></img>
+                    <img src={ProfileImg} alt="" style={{height: '38em'}}></img>
                 </ImageBox>
                 <DescriptionBox>
-                    Nice to meet you! My name is Sim Yu Bo, I am currently a 2nd Year student studying in Republic Polytechnic for a Diploma in Digital Design and Development.
+                    Nice to meet you! My name is Sim Yu Bo, I am currently a 3rd Year student studying in Republic Polytechnic for a Diploma in Digital Design and Development.
 
                     I strive to create enjoyable and easy-to-use software that everyone can use, and I will stop at nothing to achieve this goal.
 

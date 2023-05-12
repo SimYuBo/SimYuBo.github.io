@@ -1,6 +1,6 @@
 import { Box } from '@mui/material';
 import FeaturedTestImg from "../../Assets/500x300.svg"
-import ProfileTestImg from "../../Assets/350x500.svg"
+import ProfileImg from "../../Assets/Profile Image.png"
 import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
 import { LfSection, RfSection } from '../Home/FeaturedSection.component';
 import '../../Styles/Home/HomeStyles.css';
@@ -34,7 +34,7 @@ export default function HomeLayout() {
                                 Hello! my name is Yu Bo, I am currently a third year student at republic polytechnic studying for a diploma in Digital Design and Development. I always strive for my projects to be an enjoyable experience for users, and to create something I will be proud of at the end of the day.
                             </LightText>
                         </FlexBlockBox>
-                        <img src={ProfileTestImg} alt=""></img>
+                        <img src={ProfileImg} alt="" style={{height: '38em'}}></img>
                     </FlexBox>
                 </MainContentBox>
                 <MainContentBox>

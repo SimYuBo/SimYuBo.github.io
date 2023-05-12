@@ -37,7 +37,7 @@ export default function AboutLayout() {
                             Front-end Web Development
                         </LightTitle>
                         <LightText>
-                            I can use CSS, HTML5, JavaScript as well as CSS libraries like bootstrap 5 to create webpages for use
+                            I can use CSS, HTML5, React, JavaScript as well as CSS libraries like bootstrap 5 to create stunning webpages
                         </LightText>
                     </SkillsTextBox>
                     <SkillsTextBox>
@@ -45,7 +45,7 @@ export default function AboutLayout() {
                             Back-end Web Development
                         </LightTitle>
                         <LightText>
-                            I am adept in using PHP and SQL queries to send and retrieve data from a database, as well as to perform simple calculations and retrieval of user input data
+                            I am familiar in using PHP and SQL queries to send and retrieve data from a database, as well as to perform simple calculations and retrieval of user data
                         </LightText>
                     </SkillsTextBox>
                 </MainContentBox>
