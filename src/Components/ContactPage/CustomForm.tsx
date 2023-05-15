@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Snackbar, Alert } from '@mui/material';
 import { Send } from '@mui/icons-material';
-import { CustomButton, CustomTextField, FormContainer } from '../Styles/ContactPage/ContactStyles';
+import { CustomButton, CustomTextField, FormContainer } from '../../Styles/ContactPage/ContactStyles';
 import emailjs from 'emailjs-com';
 
 interface FormValues {

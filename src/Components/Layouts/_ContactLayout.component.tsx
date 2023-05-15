@@ -1,4 +1,4 @@
-import ContactForm from "../../Utilities/CustomForm";
+import ContactForm from "../ContactPage/CustomForm";
 import { LightHeader, LightText, RootBox, TopMarginBox } from "../Miscellaneous/GlobalElements.component";
 
 export default function ContactLayout() {
