@@ -1,18 +1,39 @@
 import styled from "@emotion/styled";
-import { Box } from "@mui/material";
-
-export const FormRootBoxSx = {
-    display: 'block',
-    width: '100%',
-}
+import { Box, Button, TextField } from "@mui/material";
+import { mainTheme } from "../Theme";
 
 export const FormContainer = styled(Box)({
     display: 'flex',
     flexDirection: 'column',
     gap: '1rem',
-    maxWidth: '30rem',
     margin: 'auto',
-    padding: '1rem',
-    backgroundColor: '#f9f9f9',
-    borderRadius: '0.5rem',
-  });
+    paddingTop: '1em',
+});
+
+export const CustomTextField = styled(TextField)({
+    '& .MuiOutlinedInput-notchedOutline': {
+        borderWidth: '2px',
+        borderStyle: 'solid',
+        borderColor: mainTheme.palette.primary.main,
+        borderRadius: '5px',
+        width: '100%',
+    },
+    '& .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline': {
+        borderColor: mainTheme.palette.primary.light,
+    },
+});
+
+export const CustomButton = styled(Button)({
+    borderWidth: '2px',
+    borderStyle: 'solid',
+    borderColor: mainTheme.palette.primary.main,
+    backgroundColor: mainTheme.palette.primary.dark,
+    fontFamily: 'Arial',
+    fontWeight: 'bold',
+    color: mainTheme.palette.primary.main,
+    alignItems: 'center',
+    margin: 'auto',
+    '&:hover': {
+        backgroundColor: mainTheme.palette.secondary.main,
+    },
+})

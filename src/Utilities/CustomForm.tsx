@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Button, Snackbar, TextField, Alert } from '@mui/material';
 import { Send } from '@mui/icons-material';
-import { FormContainer } from '../Styles/ContactPage/ContactStyles';
+import { CustomButton, CustomTextField, FormContainer } from '../Styles/ContactPage/ContactStyles';
 import emailjs from 'emailjs-com';
 
 interface FormValues {
@@ -46,7 +46,7 @@ const ContactForm = () => {
                 'service_uftaqdq',
                 'template_lkns4qv',
                 emailData,
-                'YOUR_USER_ID'
+                'HP1dxANU6H-QiLrKJ'
             );
 
             setSnackbarSeverity('success');
@@ -63,14 +63,14 @@ const ContactForm = () => {
     return (
         <form onSubmit={handleSubmit}>
             <FormContainer >
-                <TextField
+                <CustomTextField
                     required
                     label="Name"
                     name="name"
                     value={formValues.name}
                     onChange={handleChange}
                 />
-                <TextField
+                <CustomTextField
                     required
                     label="Email"
                     name="email"
@@ -78,23 +78,23 @@ const ContactForm = () => {
                     onChange={handleChange}
                     type="email"
                 />
-                <TextField
+                <CustomTextField
                     required
                     label="Message"
                     name="message"
                     value={formValues.message}
                     onChange={handleChange}
                     multiline
-                    rows={4}
+                    rows={7}
                 />
-                <Button
+                <CustomButton
                     variant="contained"
-                    color="primary"
                     endIcon={<Send />}
                     type="submit"
+                    sx={{width:'30%', height: '4em'}}
                 >
                     Send
-                </Button>
+                </CustomButton>
                 <Snackbar
                     open={openSnackbar}
                     autoHideDuration={6000}

@@ -1,3 +1,4 @@
+import ContactForm from "../../Utilities/CustomForm";
 import { MessageForm } from "../ContactPage/ContactElements.component";
 import { LightHeader, LightText, RootBox, TopMarginBox } from "../Miscellaneous/GlobalElements.component";
 
@@ -10,10 +11,10 @@ export default function ContactLayout() {
                         How would I reach you?
                     </LightHeader>
                     <LightText>
-                        Are you interested in working with me? Drop me a message using the form below or via the following icons.
+                        Are you interested in working with me? Drop me a message using the form below.
                     </LightText>
                 </TopMarginBox>
-                <MessageForm/>
+                <ContactForm/>
             </RootBox>
         </>
     );
