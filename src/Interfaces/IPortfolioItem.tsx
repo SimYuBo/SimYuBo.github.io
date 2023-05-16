@@ -1,5 +1,8 @@
 export interface PortfolioItemProps {
-    Img: string;
-    Title: string;
-    Desc: string;
+    imageUrl: string;
+    title: string;
+    description: string;
+    dialogImageUrl: string;
+    duration: string;
+    languages: string;
 }

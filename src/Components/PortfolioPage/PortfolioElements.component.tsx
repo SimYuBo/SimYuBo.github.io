@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { PortfolioItemProps } from "../../Interfaces/IPortfolioItem";
 import { ContentBoxSx, DescriptionBoxLeftSx, DescriptionBoxRightSx, ImageBoxSx, PortfolioRootBoxSx, TitleBoxLeftSx, TitleBoxRightSx } from "../../Styles/PortfolioPage/PortfolioStyles";
 import { LightText, LightTitle } from "../Miscellaneous/GlobalElements.component";
+import PortfolioDialog from "./PortfolioDialog";
 
 function PortfolioRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
     return (
@@ -96,25 +97,27 @@ function DescriptionBoxRight({ children }: { children: React.ReactNode | React.R
 }
 
 export function PortfolioItemLeft(props: PortfolioItemProps) {
-    const { Title, Img, Desc } = props
+    const { title, imageUrl, description, dialogImageUrl, duration, languages } = props
     return (
         <>
             <PortfolioRootBox>
                 <ImageBox>
-                    <img
-                        src={Img}
-                        alt=""
-                        style={{
-                            width: '100%',
-                            borderRadius: 3,
-                        }}></img>
+                    <PortfolioDialog
+                        imageUrl={imageUrl}
+                        dialogImageUrl={dialogImageUrl}
+                        dialogTitle={title}
+                        dialogDescription={description}
+                        duration={duration}
+                        languages={languages}
+                    />
                 </ImageBox>
+
                 <ContentBox>
                     <TitleBoxRight>
-                        {Title}
+                        {title}
                     </TitleBoxRight>
                     <DescriptionBoxRight>
-                        {Desc}
+                        {description}
                     </DescriptionBoxRight>
                 </ContentBox>
             </PortfolioRootBox>
@@ -123,26 +126,27 @@ export function PortfolioItemLeft(props: PortfolioItemProps) {
 }
 
 export function PortfolioItemRight(props: PortfolioItemProps) {
-    const { Title, Img, Desc } = props
+    const { title, imageUrl, description, dialogImageUrl, duration, languages } = props
     return (
         <>
             <PortfolioRootBox>
                 <ContentBox>
                     <TitleBoxLeft>
-                        {Title}
+                        {title}
                     </TitleBoxLeft>
                     <DescriptionBoxLeft>
-                        {Desc}
+                        {description}
                     </DescriptionBoxLeft>
                 </ContentBox>
                 <ImageBox>
-                    <img
-                        src={Img}
-                        alt=""
-                        style={{
-                            width: '100%',
-                            borderRadius: 3,
-                        }}></img>
+                    <PortfolioDialog
+                        imageUrl={imageUrl}
+                        dialogImageUrl={dialogImageUrl}
+                        dialogTitle={title}
+                        dialogDescription={description}
+                        duration={duration}
+                        languages={languages}
+                    />
                 </ImageBox>
             </PortfolioRootBox>
         </>

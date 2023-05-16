@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
 import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileImg from "../../Assets/Profile Image.png"
-import ProjectImage1 from "../../Assets/EscapeRoomImage1.jpg"
-import ProjectImage2 from "../../Assets/Project 2.jpg"
+import EscapeRoomImage1 from "../../Assets/EscapeRoomImage1.jpg"
+import ToyKingdomImage1 from "../../Assets/ToyKingdomImage1.jpg"
 import { LfSection, RfSection } from '../Home/FeaturedSection.component';
 import '../../Styles/Home/HomeStyles.css';
 import { Footer } from '../Miscellaneous/Footer.component';
@@ -47,7 +47,7 @@ export default function HomeLayout() {
                     >
                         <LfSection
                             Title="VR Escape Room"
-                            Img={ProjectImage1}
+                            Img={EscapeRoomImage1}
                             Desc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
                         >
                         </LfSection>
@@ -57,7 +57,7 @@ export default function HomeLayout() {
                     >
                         <RfSection
                             Title="Little Toy Kingdom"
-                            Img={ProjectImage2}
+                            Img={ToyKingdomImage1}
                             Desc="Little Toy Kingdom is a concept design for a online store that retails toys for children"
                         >
                         </RfSection>
@@ -81,6 +81,7 @@ export default function HomeLayout() {
                         />
                     </Box>
                 </MainContentBox>
+                {/*
                 <MainContentBox>
                     <LightHeader>
                         How can I reach you?
@@ -88,7 +89,8 @@ export default function HomeLayout() {
                     <LightText>
                         Don't be afraid to reach out to me! Drop me a message via the following icons below or shoot me an email if you feel like it!
                     </LightText>
-                </MainContentBox>
+                    </MainContentBox>
+                    */}
                 <Footer />
             </RootBox>
         </>
