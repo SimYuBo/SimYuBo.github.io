@@ -21,8 +21,7 @@ export default function PortfolioLayout() {
                         Overall, this was an eye opening experience for me as it was the first time learning C#, not to mention how excited I was to make my first ever game, in VR nonetheless!
                         What kid hasn't thought of making their own game."
                         dialogImageUrl={EscapeRoomImage1}
-                        duration="Worked on for 3 months"
-                        languages="Made using C#, Unity 3D"
+                        languages="C#, Unity 3D"
                     />
                 </TopMarginBox>
                 <TopMarginBox>
@@ -32,8 +31,7 @@ export default function PortfolioLayout() {
                         description="Little Toy Kingdom is a concept design for a toy store that wants to transition online. 
                         It is a practice task I used to hone my skills in Web Design, teaching me good practices in designing an online store."
                         dialogImageUrl={ToyKingdomImage2}
-                        duration="Worked on for 1 week"
-                        languages="Made using Adobe XD"
+                        languages="Adobe XD"
                     />
                 </TopMarginBox>
                 <TopMarginBox>
@@ -45,7 +43,6 @@ export default function PortfolioLayout() {
                         sit amet cursus sit amet dictum sit amet justo donec enim diam vulputate ut pharetra sit amet aliquam id diam maecenas 
                         ultricies mi eget mauris pharetra et ultrices neque"
                         dialogImageUrl={FeaturedTestImg}
-                        duration=""
                         languages=""
                     />
                 </TopMarginBox>
@@ -58,7 +55,6 @@ export default function PortfolioLayout() {
                         ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend 
                         donec pretium vulputate sapien nec sagittis"
                         dialogImageUrl={FeaturedTestImg}
-                        duration=""
                         languages=""
                     />
                 </TopMarginBox>
@@ -71,7 +67,6 @@ export default function PortfolioLayout() {
                         sed felis eget velit aliquet sagittis id consectetur purus ut faucibus pulvinar elementum integer enim neque volutpat ac 
                         tincidunt vitae semper quis lectus nulla"
                         dialogImageUrl={FeaturedTestImg}
-                        duration=""
                         languages=""
                     />
                 </TopMarginBox>

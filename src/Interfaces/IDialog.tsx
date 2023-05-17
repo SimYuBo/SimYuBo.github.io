@@ -3,6 +3,5 @@ export interface DialogProps {
   dialogImageUrl: string;
   dialogTitle: string;
   dialogDescription: string;
-  duration: string;
   languages: string;
 }

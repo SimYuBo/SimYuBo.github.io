@@ -97,7 +97,7 @@ function DescriptionBoxRight({ children }: { children: React.ReactNode | React.R
 }
 
 export function PortfolioItemLeft(props: PortfolioItemProps) {
-    const { title, imageUrl, description, dialogImageUrl, duration, languages } = props
+    const { title, imageUrl, description, dialogImageUrl, languages } = props
     return (
         <>
             <PortfolioRootBox>
@@ -107,7 +107,6 @@ export function PortfolioItemLeft(props: PortfolioItemProps) {
                         dialogImageUrl={dialogImageUrl}
                         dialogTitle={title}
                         dialogDescription={description}
-                        duration={duration}
                         languages={languages}
                     />
                 </ImageBox>
@@ -126,7 +125,7 @@ export function PortfolioItemLeft(props: PortfolioItemProps) {
 }
 
 export function PortfolioItemRight(props: PortfolioItemProps) {
-    const { title, imageUrl, description, dialogImageUrl, duration, languages } = props
+    const { title, imageUrl, description, dialogImageUrl, languages } = props
     return (
         <>
             <PortfolioRootBox>
@@ -144,7 +143,6 @@ export function PortfolioItemRight(props: PortfolioItemProps) {
                         dialogImageUrl={dialogImageUrl}
                         dialogTitle={title}
                         dialogDescription={description}
-                        duration={duration}
                         languages={languages}
                     />
                 </ImageBox>

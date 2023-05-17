@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, IconButton, Typography } from '@mui/material';
 import { DialogProps } from '../../Interfaces/IDialog';
 
-const PortfolioDialog = ({ imageUrl, dialogTitle, dialogDescription, dialogImageUrl, duration, languages }: DialogProps) => {
+const PortfolioDialog = ({ imageUrl, dialogTitle, dialogDescription, dialogImageUrl, languages }: DialogProps) => {
     const [open, setOpen] = useState(false);
 
     const handleClickOpen = () => {
@@ -30,8 +30,7 @@ const PortfolioDialog = ({ imageUrl, dialogTitle, dialogDescription, dialogImage
                     <img src={dialogImageUrl} alt={dialogTitle} style={{ maxWidth: '100%' }} />
                     <DialogContentText>
                         <Typography>{dialogDescription}</Typography>
-                        <Typography sx={{mt: '1em'}}>{duration}</Typography>
-                        <Typography>{languages}</Typography>
+                        <Typography sx={{mt: '1em'}}>Made using: {languages}</Typography>
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
