@@ -1,6 +1,7 @@
 import { Box, Typography } from "@mui/material";
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { BlockBoxSx, ContrastTextSx, DarkTextSx, FlexBoxSx, LightHeaderSx, LightTextSx, LightTitleSx, MainContentBoxSx, RootBoxSx, TopMarginBoxSx } from "../../Styles/Components/GlobalStyles";
+import { FadeInSectionProps } from "../../Interfaces/IGlobal";
 
 export function RootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
     return (
@@ -137,3 +138,44 @@ export function LightHeader({ children }: { children: React.ReactNode | React.Re
         </>
     );
 }
+
+export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
+    const sectionRef = useRef<HTMLDivElement>(null);
+    const [inView, setInView] = useState(false);
+
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    setInView(true);
+                    observer.unobserve(entry.target);
+                }
+            },
+            { threshold: 0.1 }
+        );
+
+        const sectionElement = sectionRef.current;
+        if (sectionElement) {
+            observer.observe(sectionElement);
+        }
+
+        return () => {
+            if (sectionElement) {
+                observer.unobserve(sectionElement);
+            }
+        };
+    }, []);
+
+    return (
+        <div ref={sectionRef}>
+            <Box
+                sx={{
+                    opacity: inView ? 1 : 0,
+                    transition: 'opacity 0.5s',
+                }}
+            >
+                {children}
+            </Box>
+        </div>
+    );
+};

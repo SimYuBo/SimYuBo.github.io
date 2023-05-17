@@ -23,7 +23,6 @@ export const CustomTextField = styled(TextField)({
     },
 });
 
-
 export const CustomButton = styled(Button)({
     borderWidth: '2px',
     borderStyle: 'solid',
@@ -38,3 +37,17 @@ export const CustomButton = styled(Button)({
         backgroundColor: mainTheme.palette.secondary.main,
     },
 })
+
+export const IconBox = styled(Box)({
+    display: 'flex',
+    gap: '3em',
+    justifyContent: 'center',
+    marginTop: '2em'
+})
+
+export const IconSx = {
+    '& .MuiSvgIcon-root': {
+        fontSize: '3em',
+    },
+    color: mainTheme.palette.primary.light,
+}
