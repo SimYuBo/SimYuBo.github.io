@@ -1,4 +1,4 @@
-import { Box, IconButton } from "@mui/material";
+import { IconButton } from "@mui/material";
 import ContactForm from "../ContactPage/CustomForm";
 import { FadeInSection, LightHeader, LightText, RootBox, TopMarginBox } from "../Miscellaneous/GlobalElements.component";
 import GitHubIcon from '@mui/icons-material/GitHub';

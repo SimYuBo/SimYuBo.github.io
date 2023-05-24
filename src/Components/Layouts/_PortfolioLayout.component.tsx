@@ -1,7 +1,6 @@
 import { Footer } from "../Miscellaneous/Footer.component";
 import { RootBox, TopMarginBox, LightHeader, FadeInSection } from "../Miscellaneous/GlobalElements.component";
 import { PortfolioItemLeft, PortfolioItemRight } from "../PortfolioPage/PortfolioElements.component";
-import FeaturedTestImg from "../../Assets/500x300.svg"
 import EscapeRoomImage1 from "../../Assets/EscapeRoomImage1.jpg"
 import ToyKingdomImage1 from "../../Assets/ToyKingdomImage1.jpg"
 import ToyKingdomImage2 from "../../Assets/ToyKingdomImage2.jpg"
