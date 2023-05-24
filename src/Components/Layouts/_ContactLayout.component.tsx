@@ -16,7 +16,7 @@ export default function ContactLayout() {
                             How would I reach you?
                         </LightHeader>
                         <LightText>
-                            Are you interested in working with me? Drop me a message using the form below.
+                            Want to know more? Drop me a message using the form below.
                         </LightText>
                     </FadeInSection>
                 </TopMarginBox>

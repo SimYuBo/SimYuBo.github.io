@@ -5,6 +5,8 @@ import FeaturedTestImg from "../../Assets/500x300.svg"
 import EscapeRoomImage1 from "../../Assets/EscapeRoomImage1.jpg"
 import ToyKingdomImage1 from "../../Assets/ToyKingdomImage1.jpg"
 import ToyKingdomImage2 from "../../Assets/ToyKingdomImage2.jpg"
+import ElderCareImage1 from "../../Assets/ElderCareImage1.jpg"
+import SerebiiRedesignImage1 from "../../Assets/SerebiiRedesignImage1.png"
 
 export default function PortfolioLayout() {
     return (
@@ -18,13 +20,14 @@ export default function PortfolioLayout() {
                     </FadeInSection>
                     <FadeInSection>
                         <PortfolioItemLeft
-                            imageUrl={EscapeRoomImage1}
-                            title="VR Escape Room"
-                            description="This VR escape room was an assignment that I was tasked with to complete using C# in Unity.
-                        Overall, this was an eye opening experience for me as it was the first time learning C#, not to mention how excited I was to make my first ever game, in VR nonetheless!
-                        What kid hasn't thought of making their own game."
-                            dialogImageUrl={EscapeRoomImage1}
-                            languages="C#, Unity 3D"
+                            imageUrl={SerebiiRedesignImage1}
+                            title="Serebii Redesign"
+                            description="
+                            As an enthusiastic Pokémon fan who has explored various Pokémon fan database sites, I embarked on a personal challenge 
+                            to undertake the redesign of Serebii.net. With its creation dating back to 1999 and no significant updates since, my 
+                            aim is to enhance Serebii's visual appeal and user experience as personal challenge for myself."
+                            dialogImageUrl={SerebiiRedesignImage1}
+                            languages="Adobe XD"
                         />
                     </FadeInSection>
                 </TopMarginBox>
@@ -33,8 +36,12 @@ export default function PortfolioLayout() {
                         <PortfolioItemRight
                             imageUrl={ToyKingdomImage1}
                             title="Little Toy Kingdom"
-                            description="Little Toy Kingdom is a concept design for a toy store that wants to transition online. 
-                        It is a practice task I used to hone my skills in Web Design, teaching me good practices in designing an online store."
+                            description="
+                            Little Toy Kingdom is an innovative concept design for a toy store seeking to make a transition into the online realm. 
+                            Serving as a valuable practice task, this project enabled me to refine my skills in web design while focusing on implementing 
+                            best practices for designing an engaging and user-friendly online store. By exploring the intricacies of creating an immersive 
+                            digital shopping experience, Little Toy Kingdom showcases the importance of effective design principles and techniques within 
+                            the context of an e-commerce platform."
                             dialogImageUrl={ToyKingdomImage2}
                             languages="Adobe XD"
                         />
@@ -43,31 +50,34 @@ export default function PortfolioLayout() {
                 <TopMarginBox>
                     <FadeInSection>
                         <PortfolioItemLeft
-                            imageUrl={FeaturedTestImg}
-                            title="Project 3"
-                            description="ligula ullamcorper malesuada proin libero nunc consequat interdum varius sit amet mattis vulputate enim 
-                        nulla aliquet porttitor lacus luctus accumsan tortor posuere ac ut consequat semper viverra nam libero justo laoreet 
-                        sit amet cursus sit amet dictum sit amet justo donec enim diam vulputate ut pharetra sit amet aliquam id diam maecenas 
-                        ultricies mi eget mauris pharetra et ultrices neque"
-                            dialogImageUrl={FeaturedTestImg}
-                            languages=""
+                            imageUrl={ElderCareImage1}
+                            title="ElderCare"
+                            description="
+                            ElderCare is a visionary mobile app concept designed to empower and support the elderly in exploring new hobbies. With 
+                            a focus on enhancing accessibility, the app incorporates haptic features tailored to accommodate individuals with hearing 
+                            or visual impairments. Moreover, ElderCare introduces an engaging quiz element, making the learning experience more enjoyable 
+                            and interactive. This concept aims to foster personal growth and enrichment for older adults, providing them with a user-friendly 
+                            tool to embrace new passions and skills."
+                            dialogImageUrl={ElderCareImage1}
+                            languages="Adobe XD"
                         />
                     </FadeInSection>
                 </TopMarginBox>
                 <TopMarginBox>
                     <FadeInSection>
                         <PortfolioItemRight
-                            imageUrl={FeaturedTestImg}
-                            title="Project 4"
-                            description="quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia 
-                        quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat 
-                        ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend 
-                        donec pretium vulputate sapien nec sagittis"
-                            dialogImageUrl={FeaturedTestImg}
-                            languages=""
+                            imageUrl={EscapeRoomImage1}
+                            title="VR Escape Room"
+                            description="I took on the challenge of creating a VR escape room as part of an assignment utilizing C# in Unity. This 
+                            immersive experience served as a gateway to my introduction to C# programming and my first foray into game development, 
+                            particularly within the captivating world of virtual reality. With an undying excitement, I fulfilled a childhood dream 
+                            of crafting my very own game, igniting the creative spark within me and uncovering the boundless possibilities of game design."
+                            dialogImageUrl={EscapeRoomImage1}
+                            languages="C#, Unity 3D"
                         />
                     </FadeInSection>
                 </TopMarginBox>
+                {/*
                 <TopMarginBox>
                     <FadeInSection>
                         <PortfolioItemLeft
@@ -82,6 +92,7 @@ export default function PortfolioLayout() {
                         />
                     </FadeInSection>
                 </TopMarginBox>
+    */}
                 <Footer />
             </RootBox>
         </>

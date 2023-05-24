@@ -61,11 +61,8 @@ export function ImageDescription() {
                     <img src={ProfileImg} alt="" style={{height: '38em'}}></img>
                 </ImageBox>
                 <DescriptionBox>
-                    Nice to meet you! My name is Sim Yu Bo, I am currently a 3rd Year student studying in Republic Polytechnic for a Diploma in Digital Design and Development.
-
-                    I strive to create enjoyable and easy-to-use software that everyone can use, and I will stop at nothing to achieve this goal.
-
-                    I don't think of programming as something used to create, I think of it as a way to solve problems. My way of thinking has allowed myself to see assignments as separate problems that I have to solve which enhances my productivity.
+                    
+Pleasure to meet you! I'm Sim Yu Bo, a 3rd Year student pursuing a Diploma in Digital Design and Development at Republic Polytechnic. With a passion for crafting user-friendly and engaging software, I am driven to go above and beyond in achieving this objective. Rather than considering programming solely as a means of creation, I view it as a powerful problem-solving tool. This mindset enables me to approach assignments as unique challenges, enhancing my productivity and propelling me towards innovative solutions.
                 </DescriptionBox>
             </ContentBox>
         </>

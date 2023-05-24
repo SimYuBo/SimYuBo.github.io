@@ -1,8 +1,8 @@
 import { Box } from '@mui/material';
-import FeaturedTestImg from "../../Assets/500x300.svg"
 import ProfileImg from "../../Assets/Profile Image.png"
-import EscapeRoomImage1 from "../../Assets/EscapeRoomImage1.jpg"
+import SerebiiRedesignImage1 from "../../Assets/SerebiiRedesignImage1.png"
 import ToyKingdomImage1 from "../../Assets/ToyKingdomImage1.jpg"
+import ElderCareImage1 from "../../Assets/ElderCareImage1.jpg"
 import { LfSection, RfSection } from '../Home/FeaturedSection.component';
 import '../../Styles/Home/HomeStyles.css';
 import { Footer } from '../Miscellaneous/Footer.component';
@@ -38,7 +38,7 @@ export default function HomeLayout() {
                                     Hello! my name is Yu Bo, I am currently a third year student at republic polytechnic studying for a diploma in Digital Design and Development. I always strive for my projects to be an enjoyable experience for users, and to create something I will be proud of at the end of the day.
                                 </LightText>
                             </FlexBlockBox>
-                            <img src={ProfileImg} alt="" style={{ height: '38em' }}></img>
+                            <img src={ProfileImg} alt="" style={{ height: '30em' }}></img>
                         </FlexBox>
                     </MainContentBox>
                 </FadeInSection>
@@ -54,9 +54,9 @@ export default function HomeLayout() {
                             sx={{ mb: '8em' }}
                         >
                             <LfSection
-                                Title="VR Escape Room"
-                                Img={EscapeRoomImage1}
-                                Desc="This project was about creating a functional VR game inside Unity using C# based around the theme of 'escape room'"
+                                Title="Serebii Redesign"
+                                Img={SerebiiRedesignImage1}
+                                Desc="This project is a personal challenge for myself to try and redesign Serebii.net to hone my skills in web design"
                             >
                             </LfSection>
                         </Box>
@@ -75,9 +75,9 @@ export default function HomeLayout() {
                     </FadeInSection>
                     <FadeInSection>
                         <LfSection
-                            Title="Project 3"
-                            Img={FeaturedTestImg}
-                            Desc="blandit turpis cursus in hac habitasse platea dictumst quisque sagittis purus sit amet volutpat consequat mauris nunc congue nisi vitae suscipit tellus mauris a diam maecenas sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu"
+                            Title="ElderCare"
+                            Img={ElderCareImage1}
+                            Desc="ElderCare is a concept design for a mobile app that assists the elderly in learning new hobbies"
                         >
                         </LfSection>
                     </FadeInSection>

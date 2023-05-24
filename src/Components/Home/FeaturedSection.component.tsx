@@ -180,8 +180,11 @@ export function LfSection(props: FeaturedSectionProps) {
             src={Img}
             alt=""
             style={{
-              width: '100%',
               borderRadius: 3,
+              position: 'absolute',
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
             }}></img>
         </LfImageBox>
         <LfOverlayBox>

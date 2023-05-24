@@ -20,8 +20,10 @@ const PortfolioDialog = ({ imageUrl, dialogTitle, dialogDescription, dialogImage
                     src={imageUrl}
                     alt=""
                     style={{
-                        width: '100%',
                         borderRadius: 3,
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
                     }}></img>
             </IconButton>
             <Dialog open={open} onClose={handleClose}>
@@ -30,7 +32,7 @@ const PortfolioDialog = ({ imageUrl, dialogTitle, dialogDescription, dialogImage
                     <img src={dialogImageUrl} alt={dialogTitle} style={{ maxWidth: '100%' }} />
                     <DialogContentText>
                         <Typography>{dialogDescription}</Typography>
-                        <Typography sx={{mt: '1em'}}>Made using: {languages}</Typography>
+                        <Typography sx={{ mt: '1em' }}>Made using: {languages}</Typography>
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>
