@@ -1,8 +1,9 @@
-import { AppBar } from "@mui/material";
+import { AppBar, Typography } from "@mui/material";
 import { useEffect, useState } from "react";
-import { Navbar, NavLink, NavMenu } from '../Components/Miscellaneous/NavbarElements.component';
 import { NavbarState } from "../Interfaces/ICustomNav";
 import logo from '../Assets/Personal_Logo_Transparent.png'
+import { LogoName } from "../Styles/NavbarStyles";
+import { Navbar, NavMenu, NavLink } from "../Pages/Elements/NavbarElements.component";
 
 const CustomNavbar: React.FC = () => {
     const [state, setState] = useState<NavbarState>({
@@ -34,6 +35,7 @@ const CustomNavbar: React.FC = () => {
                     customNavLink="/"
                 >
                     <img src={logo} alt="Logo" style={{ width: "2em", height: "auto", zIndex: 1, position: 'absolute', display: 'flex', justifyContent: 'center', top: '1em' }}></img>
+                    <Typography sx={LogoName}>Sim Yu Bo</Typography>
                 </NavLink>
                 <NavMenu>
                     <NavLink
