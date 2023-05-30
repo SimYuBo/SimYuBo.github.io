@@ -34,12 +34,12 @@ export function NavMenu({ children }: { children: React.ReactNode | React.ReactN
 }
 
 export function NavLink(props: NavLinkProps) {
-    const { children, customNavLink } = props
+    const { children, link } = props
     return (
         <>
             <Link
                 component={BrowserLink}
-                to={customNavLink}
+                to={link}
                 underline='none'
                 sx={LinkTypography}
             >

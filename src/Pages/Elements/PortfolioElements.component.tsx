@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import { PortfolioItemProps } from "../../Interfaces/IPortfolioItem";
 import { ContentBoxSx, DescriptionBoxLeftSx, DescriptionBoxRightSx, ImageBoxSx, PortfolioRootBoxSx, TitleBoxLeftSx, TitleBoxRightSx } from "../../Styles/PortfolioStyles";
 import { LightTitle, LightText } from "./GlobalElements.component";
+import { Link } from "react-router-dom";
 
 function PortfolioRootBox({ children }: { children: React.ReactNode | React.ReactNode[] }) {
     return (
@@ -96,20 +97,22 @@ function DescriptionBoxRight({ children }: { children: React.ReactNode | React.R
 }
 
 export function PortfolioItemLeft(props: PortfolioItemProps) {
-    const { title, imageUrl, description } = props
+    const { title, imageUrl, description, link } = props
     return (
         <>
             <PortfolioRootBox>
                 <ImageBox>
-                    <img
-                        src={imageUrl}
-                        alt=""
-                        style={{
-                            borderRadius: 3,
-                            width: '100%',
-                            height: '100%',
-                            objectFit: 'cover',
-                        }}></img>
+                    <Link to={link}>
+                        <img
+                            src={imageUrl}
+                            alt=""
+                            style={{
+                                borderRadius: 3,
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                            }}></img>
+                    </Link>
                 </ImageBox>
 
                 <ContentBox>
@@ -126,7 +129,7 @@ export function PortfolioItemLeft(props: PortfolioItemProps) {
 }
 
 export function PortfolioItemRight(props: PortfolioItemProps) {
-    const { title, imageUrl, description } = props
+    const { title, imageUrl, description, link } = props
     return (
         <>
             <PortfolioRootBox>
@@ -139,15 +142,17 @@ export function PortfolioItemRight(props: PortfolioItemProps) {
                     </DescriptionBoxLeft>
                 </ContentBox>
                 <ImageBox>
-                    <img
-                        src={imageUrl}
-                        alt=""
-                        style={{
-                            borderRadius: 3,
-                            width: '100%',
-                            height: '100%',
-                            objectFit: 'cover',
-                        }}></img>
+                    <Link to={link}>
+                        <img
+                            src={imageUrl}
+                            alt=""
+                            style={{
+                                borderRadius: 3,
+                                width: '100%',
+                                height: '100%',
+                                objectFit: 'cover',
+                            }}></img>
+                    </Link>
                 </ImageBox>
             </PortfolioRootBox>
         </>

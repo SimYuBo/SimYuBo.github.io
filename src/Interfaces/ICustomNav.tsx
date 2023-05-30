@@ -5,5 +5,5 @@ export interface NavbarState {
 
 export interface NavLinkProps {
     children:  React.ReactNode | React.ReactNode[];
-    customNavLink: string;
+    link: string;
 }

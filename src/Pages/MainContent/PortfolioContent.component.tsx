@@ -16,6 +16,7 @@ export default function PortfolioContent() {
                 </FadeInSection>
                 <FadeInSection>
                     <PortfolioItemLeft
+                        link="/project1"
                         imageUrl={SerebiiRedesignImage1}
                         title="Serebii Redesign"
                         description="
@@ -28,6 +29,7 @@ export default function PortfolioContent() {
             <TopMarginBox>
                 <FadeInSection>
                     <PortfolioItemRight
+                        link="/project2"
                         imageUrl={ToyKingdomImage1}
                         title="Little Toy Kingdom"
                         description="
@@ -42,6 +44,7 @@ export default function PortfolioContent() {
             <TopMarginBox>
                 <FadeInSection>
                     <PortfolioItemLeft
+                        link="/project3"
                         imageUrl={ElderCareImage1}
                         title="ElderCare"
                         description="
@@ -56,6 +59,7 @@ export default function PortfolioContent() {
             <TopMarginBox>
                 <FadeInSection>
                     <PortfolioItemRight
+                        link="/project4"
                         imageUrl={EscapeRoomImage1}
                         title="VR Escape Room"
                         description="I took on the challenge of creating a VR escape room as part of an assignment utilizing C# in Unity. This 
