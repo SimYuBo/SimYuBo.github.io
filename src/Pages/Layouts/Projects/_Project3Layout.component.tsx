@@ -6,6 +6,7 @@ import Project3Content from "../../MainContent/Projects/Project3Content.componen
 export default function Project3Layout() {
     return (
         <>
+        {/* Add navbar and footer to content of page */}
             <CustomNavbar />
             <RootBox>
                 <Project3Content />

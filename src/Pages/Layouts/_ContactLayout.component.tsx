@@ -6,6 +6,7 @@ import ContactContent from "../MainContent/ContactContent.component";
 export default function ContactLayout() {
     return (
         <>
+        {/* Add navbar and footer to content of page */}
             <CustomNavbar />
             <RootBox>
                 <ContactContent />

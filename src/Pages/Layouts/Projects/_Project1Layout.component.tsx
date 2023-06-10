@@ -6,6 +6,7 @@ import Project1Content from "../../MainContent/Projects/Project1Content.componen
 export default function Project1Layout() {
     return (
         <>
+        {/* Add navbar and footer to content of page */}
             <CustomNavbar />
             <RootBox>
                 <Project1Content />

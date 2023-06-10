@@ -4,17 +4,23 @@ import { Send } from '@mui/icons-material';
 import { CustomButton, CustomTextField, FormContainer } from '../../Styles/ContactStyles';
 import emailjs from 'emailjs-com';
 
+// Importing necessary dependencies and components
+
 interface FormValues {
     name: string;
     email: string;
     message: string;
 }
 
+// Defining an interface to represent the form values
+
 const initialState: FormValues = {
     name: '',
     email: '',
     message: '',
 };
+
+// Initializing the initial state of the form values
 
 const ContactForm = () => {
     const [formValues, setFormValues] = useState<FormValues>(initialState);
@@ -24,12 +30,16 @@ const ContactForm = () => {
     >('success');
     const [snackbarMessage, setSnackbarMessage] = useState<string>('');
 
+    // Defining state variables and their initial values using the useState hook
+
     const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
         setFormValues((prevValues) => ({
             ...prevValues,
             [event.target.name]: event.target.value,
         }));
     };
+
+    // Handling the change event for input fields and updating the form values
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
@@ -59,6 +69,8 @@ const ContactForm = () => {
             setOpenSnackbar(true);
         }
     };
+
+    // Handling the form submission event and sending an email using emailjs library
 
     return (
         <form onSubmit={handleSubmit}>
@@ -91,7 +103,7 @@ const ContactForm = () => {
                     variant="contained"
                     endIcon={<Send />}
                     type="submit"
-                    sx={{width:'30%', height: '4em'}}
+                    sx={{ width: '30%', height: '4em' }}
                 >
                     Send
                 </CustomButton>

@@ -15,16 +15,18 @@ import Project4Layout from './Pages/Layouts/Projects/_Project4Layout.component';
 export default function App() {
   return (
     <>
+      {/* Create theme */}
       <ThemeProvider theme={mainTheme}>
         <CssBaseline />
+        {/* Create routes to pages */}
         <Routes>
           <Route path='/' element={<HomeLayout />} />
           <Route path='/about' element={<AboutLayout />} />
-          <Route path="/portfolio" element={<PortfolioLayout />}/>
+          <Route path="/portfolio" element={<PortfolioLayout />} />
           <Route path='/contact' element={<ContactLayout />} />
           <Route path='/project1' element={<Project1Layout />} />
           <Route path='/project2' element={<Project2Layout />} />
-          <Route path="/project3" element={<Project3Layout />}/>
+          <Route path="/project3" element={<Project3Layout />} />
           <Route path='/project4' element={<Project4Layout />} />
         </Routes>
       </ThemeProvider>

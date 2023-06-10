@@ -6,6 +6,7 @@ import HomeContent from "../MainContent/HomeContent.component";
 export default function HomeLayout() {
     return (
         <>
+        {/* Add navbar and footer to content of page */}
             <CustomNavbar />
             <RootBox>
                 <HomeContent />

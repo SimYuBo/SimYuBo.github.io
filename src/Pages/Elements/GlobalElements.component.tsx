@@ -139,11 +139,13 @@ export function LightHeader({ children }: { children: React.ReactNode | React.Re
     );
 }
 
+// A component for a section that fades in when it enters the viewport
 export const FadeInSection: React.FC<FadeInSectionProps> = ({ children }) => {
     const sectionRef = useRef<HTMLDivElement>(null);
     const [inView, setInView] = useState(false);
 
     useEffect(() => {
+        // Observer to track if the section is in view
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting) {
