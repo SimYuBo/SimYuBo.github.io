@@ -1,6 +1,6 @@
 export const ContentBoxSx = {
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'center',
 }
 
 export const ImageBoxSx = {
@@ -10,7 +10,8 @@ export const ImageBoxSx = {
 }
 
 export const DescriptionBoxSx = {
-    ml: '2em',
+    ml: '3em',
+    mt: '4em'
 }
 
 export const BottomMarginSx = {

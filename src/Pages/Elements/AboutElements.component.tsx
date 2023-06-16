@@ -58,11 +58,23 @@ export function ImageDescription() {
         <>
             <ContentBox>
                 <ImageBox>
-                    <img src={ProfileImg} alt="" style={{height: '38em'}}></img>
+                    <img src={ProfileImg} alt="" style={{ height: '38em' }}></img>
                 </ImageBox>
                 <DescriptionBox>
-                    
-Pleasure to meet you! I'm Sim Yu Bo, a 3rd Year student pursuing a Diploma in Digital Design and Development at Republic Polytechnic. With a passion for crafting user-friendly and engaging software, I am driven to go above and beyond in achieving this objective. Rather than considering programming solely as a means of creation, I view it as a powerful problem-solving tool. This mindset enables me to approach assignments as unique challenges, enhancing my productivity and propelling me towards innovative solutions.
+                    <Box>
+                        Pleasure to meet you! My name is Yu Bo.
+                    </Box>
+                    <Box sx={{marginTop: '1em'}}>
+                        I am a 3rd Year student pursuing a Diploma in Digital Design and Development at Republic Polytechnic.
+                    </Box>
+                    <Box sx={{marginTop: '1em'}}>
+                        With a passion for crafting user-friendly and engaging software, I am driven to go above and beyond in achieving this objective. Rather
+                        than considering programming solely as a means of creation, I view it as a powerful problem-solving tool. This mindset enables me to approach
+                        assignments as unique challenges, enhancing my productivity and propelling me towards innovative solutions.
+                    </Box>
+                    <Box sx={{marginTop: '1em'}}>
+                        An interesting thing about myself is that I enjoy reading manga/webtoons/manhwa.
+                    </Box>
                 </DescriptionBox>
             </ContentBox>
         </>

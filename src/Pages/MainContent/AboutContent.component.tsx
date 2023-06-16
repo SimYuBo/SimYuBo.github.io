@@ -1,6 +1,5 @@
 import { Box } from "@mui/material";
 import { ImageDescription, SkillsTextBox } from "../Elements/AboutElements.component";
-import { Footer } from "../Elements/Footer.component";
 import { RootBox, TopMarginBox, FadeInSection, LightHeader, MainContentBox, LightText, LightTitle } from "../Elements/GlobalElements.component";
 
 export default function AboutContent() {
